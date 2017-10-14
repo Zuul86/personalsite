@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: "Gatsby Starter Blog",
-    author: "Kyle Mathews",
+    title: "Adam Pritzl - Software Developer/Consultant",
+    author: "Adam Pritzl",
   },
   plugins: [
     {
@@ -38,7 +38,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        //trackingId: `ADD YOUR TRACKING ID HERE`,
+        trackingId: `UA-108122421-1`,
       },
     },
     `gatsby-plugin-offline`,

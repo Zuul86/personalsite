@@ -11,7 +11,13 @@ class BlogIndex extends React.Component {
     return (
       <div>
         <Helmet title={get(this, "props.data.site.siteMetadata.title")} />
-        This is where my intro will go.
+        <p>
+          The first time I saw code I was 10 years old.  My friends brother was writing something in BASIC on a Macintosh.  I was
+          drawn to that blue screen, line numbers, and cryptic code that I did not understand. My obsession with computers and software was born.    
+        </p>
+        <p>
+          In high school my education included BASIC and Pascal.
+        </p>
       </div>
     );
   }

@@ -15,7 +15,7 @@ class Template extends React.Component {
 				<div id="nav-wrapper"> 
 					<nav id="nav">
 						<ul>
-							<li><a href="about.html">About</a></li>
+							<li><Link to="/">About</Link></li>
 							<li><a href="contact.html">Contact</a></li>
 							<li><a href="blog-posts.html">Blog</a></li>
 						</ul>
@@ -24,7 +24,7 @@ class Template extends React.Component {
 				<div className="container"> 
 					<div id="logo">
 						<h1><a href="#">Adam Pritzl</a></h1>
-						<span className="tag">By TEMPLATED</span>
+						<span className="tag">software developer/consultant</span>
 					</div>
 				</div>
 			</div>

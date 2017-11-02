@@ -26,7 +26,7 @@ class Template extends React.Component {
 		return (
 		<div>
 			<Helmet>
-				<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,700,500,900' rel='stylesheet' type='text/css' />
+				<link href='//fonts.googleapis.com/css?family=Roboto:400,100,300,700,500,900' rel='stylesheet' type='text/css' />
 			</Helmet>
 			<div id="header">
 				<div id="nav-wrapper"> 

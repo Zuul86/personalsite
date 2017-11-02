@@ -7,10 +7,11 @@ class RecentPosts extends React.Component {
   render() {
 
     return (
-      <div>
+      <section className="row">
         <header>
           <h2>Recent Posts</h2>
         </header>
+        <section>
         <ul className="style">
         {this.props.posts.map(post => {
           if (post.node.path !== "/404/") {
@@ -31,7 +32,8 @@ class RecentPosts extends React.Component {
           }
         })}
         </ul>
-      </div>
+        </section>
+      </section>
     );
   }
 }

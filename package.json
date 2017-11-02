@@ -1,12 +1,13 @@
 {
-  "name": "gatsby-starter-blog",
-  "description": "Starter Gatsby Blog",
+  "name": "personalsite",
+  "description": "Adam Pritzl's professional site and blog",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Adam Pritzl <mathews.kyle@gzuul86@gmail.com>",
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby-starter-blog/issues"
+    "url": "https://github.com/Zuul86/personalsite/issues"
   },
   "dependencies": {
+    "bootstrap": "^3.3.7",
     "gatsby": "^1.8.12",
     "gatsby-cli": "^1.1.6",
     "gatsby-link": "^1.6.8",

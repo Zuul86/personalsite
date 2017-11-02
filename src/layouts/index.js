@@ -33,8 +33,8 @@ class Template extends React.Component {
 					<nav id="nav">
 						<ul>
 							<li><Link to="/">About</Link></li>
-							<li><a href="contact.html">Contact</a></li>
-							<li><Link to="/blog-posts">Blog</Link></li>
+							<li><Link to="/contact/">Contact</Link></li>
+							<li><Link to="/blog-posts/">Blog</Link></li>
 						</ul>
 					</nav>
 				</div>
@@ -56,7 +56,7 @@ class Template extends React.Component {
 						</div>
 
 						<div id="sidebar" className="col-md-4">
-							{location.pathname != '/blog-posts' ? <RecentPosts posts={posts}/> : null}
+							{location.pathname !== '/blog-posts/' ? <RecentPosts posts={posts}/> : null}
 							<section className="row">
 								<header>
 									<h2>Exams and Certifications</h2>

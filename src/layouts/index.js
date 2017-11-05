@@ -87,7 +87,7 @@ class Template extends React.Component {
 				<div className="container">
 					<section>
 						<header>
-							<h2>Get in touch</h2>
+							<h2><Link to="/contact/">Get in touch</Link></h2>
 							<span className="byline">Visit me on Twitter, Github, and LinkedIn</span>
 						</header>
 						<ul className="contact">

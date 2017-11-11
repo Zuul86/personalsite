@@ -9,6 +9,13 @@ import '../css/style.css';
 
 
 class Template extends React.Component {
+	constructor(props){
+		super(props);
+		this.state = {isToggleOn: false};
+
+		this.handleClick = this.handleClick.bind(this);
+	}
+
 	componentDidMount(){
 		const s = document.createElement('script');
 		s.type = 'text/javascript';
@@ -16,6 +23,12 @@ class Template extends React.Component {
 		s.src = '//cdn.youracclaim.com/assets/utilities/embed.js';
 		const o = document.getElementsByTagName('script')[0];
 		o.parentNode.insertBefore(s, o);
+	}
+
+	handleClick(){
+		this.setState(prevState => ({
+			isToggleOn: !prevState.isToggleOn
+		  }));
 	}
 
 	render() {
@@ -37,9 +50,15 @@ class Template extends React.Component {
 							<li><Link to="/blog-posts/">Blog</Link></li>
 						</ul>
 					</nav>
+					<nav id="navPanel" className={this.state.isToggleOn ? '' : 'open'}>
+						<Link className="link" to="/">About</Link>
+						<Link className="link" to="/contact/">Contact</Link>
+						<Link className="link" to="/blog-posts/">Blog</Link>
+						<a className="icon" href="javascript:void(0);" onClick={this.handleClick}><i className="fa fa-bars" /></a>
+					</nav>
 				</div>
 				<div className="container"> 
-					<div id="logo">
+					<div id="logo" className={this.state.isToggleOn ? '' : 'open'}>
 						<h1><Link to="/">Adam Pritzl</Link></h1>
 						<span className="tag">software developer/consultant</span>
 					</div>
@@ -48,7 +67,7 @@ class Template extends React.Component {
 
 			<div id="main">
 				<div className="container">
-					<div className="row">
+					<div>
 						<div id="content" className="col-md-8">
 							<section>
 								{children()}

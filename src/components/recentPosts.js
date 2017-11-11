@@ -7,7 +7,7 @@ class RecentPosts extends React.Component {
   render() {
 
     return (
-      <section className="row">
+      <section>
         <header>
           <h2>Recent Posts</h2>
         </header>

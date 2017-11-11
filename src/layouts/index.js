@@ -50,7 +50,7 @@ class Template extends React.Component {
 							<li><Link to="/blog-posts/">Blog</Link></li>
 						</ul>
 					</nav>
-					<nav id="navPanel" className={this.state.isToggleOn ? '' : 'open'}>
+					<nav id="navPanel" className={this.state.isToggleOn ? 'open' : ''}>
 						<Link className="link" to="/">About</Link>
 						<Link className="link" to="/contact/">Contact</Link>
 						<Link className="link" to="/blog-posts/">Blog</Link>
@@ -58,7 +58,7 @@ class Template extends React.Component {
 					</nav>
 				</div>
 				<div className="container"> 
-					<div id="logo" className={this.state.isToggleOn ? '' : 'open'}>
+					<div id="logo" className={this.state.isToggleOn ? 'open' : ''}>
 						<h1><Link to="/">Adam Pritzl</Link></h1>
 						<span className="tag">software developer/consultant</span>
 					</div>

@@ -56,6 +56,11 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 			text-decoration: none;
 		}
 		
+		h2 a:hover{
+			text-decoration: none;
+			color: inherit;
+		}
+
 	strong, b
 	{
 		font-weight: 500;
@@ -979,6 +984,10 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	{
 		background: #fff;
 		padding: 6em 0em;
+	}
+
+	#main .container{
+		max-width: 960px;
 	}
 
 	@media (max-width: 600px){

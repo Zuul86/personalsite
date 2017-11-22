@@ -76,15 +76,15 @@ class Template extends React.Component {
 
 						<div id="sidebar" className="col-md-4">
 							{location.pathname !== '/blog-posts/' ? <RecentPosts posts={posts}/> : null}
-							<section className="row">
+							<section>
 								<header>
 									<h2>Exams and Certifications</h2>
 								</header>
-								<section className="col-md-6">
+								<section className="col-md-6 col-xs-6">
 									<div data-iframe-width="125" data-iframe-height="250" data-share-badge-id="cca5daee-5970-43f0-8fda-8ccf87bcf45e"></div>								  
 								</section>
 
-								<section className="col-md-6">
+								<section className="col-md-6 col-xs-6">
 									<div data-iframe-width="125" data-iframe-height="250" data-share-badge-id="3286e2bb-2e0d-4766-8c0a-bd3f7bfe5e13"></div>								  
 								</section>
 							</section>

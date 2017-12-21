@@ -4,14 +4,18 @@ import Helmet from "react-helmet";
 
 class ContactPage extends React.Component {
   render() {
-    const siteTitle = this.props.data.site.siteMetadata.title;
+
+    const {title:siteTitle, email, author} = this.props.data.site.siteMetadata;
 
     return (
       <div>
         <Helmet title={siteTitle} />
-        <p>
+        <h1>
           Contact Info
-        </p>
+        </h1>
+        <address>
+          Email: <a href={`mailto:${email}`}>{`${author} <${email}>`}</a>
+        </address>
       </div>
     );
   }
@@ -28,6 +32,8 @@ query ContactQuery {
   site {
     siteMetadata {
       title
+      email
+      author
     }
   }
 }

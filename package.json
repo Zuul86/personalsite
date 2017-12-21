@@ -2,37 +2,39 @@
   "name": "personalsite",
   "description": "Adam Pritzl's professional site and blog",
   "version": "1.0.0",
-  "author": "Adam Pritzl <mathews.kyle@gzuul86@gmail.com>",
+  "author": "Adam Pritzl <zuul86@gmail.com>",
   "bugs": {
     "url": "https://github.com/Zuul86/personalsite/issues"
   },
   "dependencies": {
     "bootstrap": "^3.3.7",
-    "gatsby": "^1.8.12",
-    "gatsby-cli": "^1.1.6",
-    "gatsby-link": "^1.6.24",
-    "gatsby-plugin-google-analytics": "^1.0.4",
-    "gatsby-plugin-manifest": "^1.0.4",
-    "gatsby-plugin-offline": "^1.0.4",
-    "gatsby-plugin-preact": "^1.0.3",
-    "gatsby-plugin-react-helmet": "^1.0.3",
-    "gatsby-plugin-sharp": "^1.6.2",
-    "gatsby-remark-copy-linked-files": "^1.5.2",
-    "gatsby-remark-images": "^1.5.4",
-    "gatsby-remark-prismjs": "^1.2.1",
-    "gatsby-remark-responsive-iframe": "^1.4.3",
-    "gatsby-remark-smartypants": "^1.4.3",
-    "gatsby-source-filesystem": "^1.4.3",
-    "gatsby-transformer-remark": "^1.7.1",
-    "gatsby-transformer-sharp": "^1.6.1",
-    "lodash": "^4.15.0",
-    "react-responsive-grid": "^0.3.3",
+    "eslint": "^4.13.1",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-react": "^7.5.1",
+    "gatsby": "^1.9.146",
+    "gatsby-cli": "^1.1.28",
+    "gatsby-link": "^1.6.32",
+    "gatsby-plugin-google-analytics": "^1.0.14",
+    "gatsby-plugin-manifest": "^1.0.12",
+    "gatsby-plugin-offline": "^1.0.12",
+    "gatsby-plugin-preact": "^1.0.14",
+    "gatsby-plugin-react-helmet": "^2.0.3",
+    "gatsby-plugin-sharp": "^1.6.24",
+    "gatsby-remark-copy-linked-files": "^1.5.25",
+    "gatsby-remark-images": "^1.5.36",
+    "gatsby-remark-prismjs": "^1.2.11",
+    "gatsby-remark-responsive-iframe": "^1.4.16",
+    "gatsby-remark-smartypants": "^1.4.10",
+    "gatsby-source-filesystem": "^1.5.11",
+    "gatsby-transformer-remark": "^1.7.25",
+    "gatsby-transformer-sharp": "^1.6.16",
+    "lodash": "^4.17.4",
+    "react-helmet": "^5.2.0",
     "typeface-merriweather": "^0.0.35",
     "typeface-montserrat": "^0.0.37"
   },
   "devDependencies": {
-    "gh-pages": "^0.12.0",
-    "prettier": "^1.5.3"
+    "prettier": "^1.9.2"
   },
   "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
   "keywords": [
@@ -42,7 +44,7 @@
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
+    "url": "git+https://github.com/Zuul86/personalsite.git"
   },
   "scripts": {
     "dev": "gatsby develop",
@@ -51,7 +53,6 @@
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js'",
     "develop": "gatsby develop",
     "build": "gatsby build",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "fix-semi": "eslint --quiet --ignore-pattern node_modules --ignore-pattern public --parser babel-eslint --no-eslintrc --rule '{\"semi\": [2, \"never\"], \"no-extra-semi\": [2]}' --fix gatsby-node.js"
   }
 }

@@ -16,15 +16,6 @@ class Template extends React.Component {
 		this.handleClick = this.handleClick.bind(this);
 	}
 
-	componentDidMount(){
-		const s = document.createElement('script');
-		s.type = 'text/javascript';
-		s.async = true;
-		s.src = '//cdn.youracclaim.com/assets/utilities/embed.js';
-		const o = document.getElementsByTagName('script')[0];
-		o.parentNode.insertBefore(s, o);
-	}
-
 	handleClick(){
 		this.setState(prevState => ({
 			isToggleOn: !prevState.isToggleOn
@@ -77,18 +68,6 @@ class Template extends React.Component {
 
 						<div id="sidebar" className="col-md-4">
 							{isBlogPage ? null : <RecentPosts posts={posts}/>}
-							<section>
-								<header>
-									<h2>Exams and Certifications</h2>
-								</header>
-								<section className="col-md-6 col-xs-6">
-									<div data-iframe-width="125" data-iframe-height="250" data-share-badge-id="cca5daee-5970-43f0-8fda-8ccf87bcf45e"></div>								  
-								</section>
-
-								<section className="col-md-6 col-xs-6">
-									<div data-iframe-width="125" data-iframe-height="250" data-share-badge-id="3286e2bb-2e0d-4766-8c0a-bd3f7bfe5e13"></div>								  
-								</section>
-							</section>
 						</div>
 						
 					</div>

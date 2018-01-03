@@ -35,6 +35,7 @@ class Template extends React.Component {
 
 		const { location, children } = this.props;
 		const posts = get(this, "props.data.allMarkdownRemark.edges");
+		const isBlogPage = location.pathname === '/blog-posts/';
 
 		return (
 		<div>
@@ -75,7 +76,7 @@ class Template extends React.Component {
 						</div>
 
 						<div id="sidebar" className="col-md-4">
-							{location.pathname !== '/blog-posts/' ? <RecentPosts posts={posts}/> : null}
+							{isBlogPage ? null : <RecentPosts posts={posts}/>}
 							<section>
 								<header>
 									<h2>Exams and Certifications</h2>

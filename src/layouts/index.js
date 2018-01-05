@@ -4,8 +4,9 @@ import Helmet from 'react-helmet';
 import get from 'lodash/get';
 import RecentPosts from '../components/recentPosts';
 import SiteHeader from '../components/siteHeader';
+import QuoteSection from '../components/quoteSection';
 import SiteFooter from '../components/siteFooter';
-
+import Copyright from '../components/copyright';
 
 import 'bootstrap/dist/css/bootstrap.css';
 import '../css/style.css';
@@ -43,21 +44,11 @@ class Template extends React.Component {
 				</div>
 			</div>
 
-			<div id="tweet">
-				<div className="container">
-					<section>
-						<blockquote>&ldquo;We live in a society exquisitely dependent on science and technology, in which hardly anyone knows anything about science and technology.&rdquo; Carl Sagan</blockquote>
-					</section>
-				</div>
-			</div>
+			<QuoteSection />
 
 			<SiteFooter />
 
-			<div id="copyright">
-				<div className="container">
-					Design: <a href="http://templated.co">TEMPLATED</a> Images: <a href="http://unsplash.com">Unsplash</a> (<a href="http://unsplash.com/cc0">CC0</a>)
-				</div>
-			</div>
+			<Copyright />
 
 		</div>
 		);

@@ -9,7 +9,7 @@ class RecentPosts extends React.Component {
     return (
       <section>
         <header>
-          <h2>Recent Posts</h2>
+          <h2 style={{fontSize: '2.4em'}}>Recent Posts</h2>
         </header>
         <section>
         <ul className="style">

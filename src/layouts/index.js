@@ -4,14 +4,14 @@ import Helmet from 'react-helmet';
 import get from 'lodash/get';
 import RecentPosts from '../components/recentPosts';
 import SiteHeader from '../components/siteHeader';
+import SiteFooter from '../components/siteFooter';
+
 
 import 'bootstrap/dist/css/bootstrap.css';
 import '../css/style.css';
 
 
 class Template extends React.Component {
-
-
 	render() {
 
 		const { location, children } = this.props;
@@ -23,6 +23,7 @@ class Template extends React.Component {
 			<Helmet>
 				<link href='//fonts.googleapis.com/css?family=Roboto:400,100,300,700,500,900' rel='stylesheet' type='text/css' />
 			</Helmet>
+			
 			<SiteHeader />
 
 			<div id="main">
@@ -50,21 +51,7 @@ class Template extends React.Component {
 				</div>
 			</div>
 
-			<div id="footer">
-				<div className="container">
-					<section>
-						<header>
-							<h2><Link to="/contact/">Get in touch</Link></h2>
-							<span className="byline">Visit me on Twitter, Github, and LinkedIn</span>
-						</header>
-						<ul className="contact">
-							<li><a href="https://twitter.com/zuul86" className="fa fa-twitter" target="_blank"><span>Twitter</span></a></li>
-							<li><a href="https://github.com/Zuul86" className="fa fa-github" target="_blank"><span>GitHub</span></a></li>
-							<li><a href="https://www.linkedin.com/in/apritzl/" className="fa fa-linkedin" target="_blank"><span>LinkedIn</span></a></li>
-						</ul>
-					</section>
-				</div>
-			</div>
+			<SiteFooter />
 
 			<div id="copyright">
 				<div className="container">

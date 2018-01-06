@@ -10,12 +10,15 @@ class ContactPage extends React.Component {
     return (
       <div>
         <Helmet title={siteTitle} />
-        <h1>
-          Contact Info
-        </h1>
-        <address>
+        <p>
           Email: <a href={`mailto:${email}`}>{`${author} <${email}>`}</a>
-        </address>
+        </p>
+        <p>
+          <a href="https://www.linkedin.com/in/apritzl" target="_blank">LinkedIn</a>
+        </p>
+        <p>
+          <a href="https://twitter.com/zuul86" target="_blank">Twitter</a>
+        </p>
       </div>
     );
   }

@@ -1,7 +1,5 @@
 import React from 'react';
 import Link from 'gatsby-link';
-import FontAwesomeIcon  from '@fortawesome/react-fontawesome';
-import {faLinkedin, faTwitter, faGithub} from '@fortawesome/fontawesome-free-brands/';
 
 class SiteFooter extends React.Component {
     render(){
@@ -21,9 +19,9 @@ class SiteFooter extends React.Component {
 							<span style={{color: 'rgba(255,255,255,.2)'}}>Visit me on Twitter, Github, and LinkedIn</span>
 						</header>
 						<ul className="contact">
-							<li><a href="https://twitter.com/zuul86" target="_blank"><FontAwesomeIcon icon={faTwitter} size="lg" /><span>Twitter</span></a></li>
-							<li><a href="https://github.com/Zuul86" target="_blank"><FontAwesomeIcon icon={faGithub} size="lg" /><span>GitHub</span></a></li>
-							<li><a href="https://www.linkedin.com/in/apritzl/" target="_blank"><FontAwesomeIcon icon={faLinkedin} size="lg" /><span>LinkedIn</span></a></li>
+							<li><a href="https://twitter.com/zuul86" target="_blank"><i className="fa fa-twitter"></i><span>Twitter</span></a></li>
+							<li><a href="https://github.com/Zuul86" target="_blank"><i className="fa fa-github"></i><span>GitHub</span></a></li>
+							<li><a href="https://www.linkedin.com/in/apritzl/" target="_blank"><i className="fa fa-linkedin"></i><span>LinkedIn</span></a></li>
 						</ul>
 					</section>
 				</div>

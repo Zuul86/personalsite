@@ -78,20 +78,6 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	{
 		text-decoration: underline;
 	}
-
-	sub
-	{
-		position: relative;
-		top: 0.5em;
-		font-size: 0.8em;
-	}
-	
-	sup
-	{
-		position: relative;
-		top: -0.5em;
-		font-size: 0.8em;
-	}
 	
 	hr
 	{
@@ -142,11 +128,6 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	br.clear
 	{
 		clear: both;
-	}
-
-	.pennant
-	{
-		color: #bbb;
 	}
 
 	/* Sections/Articles */
@@ -277,34 +258,6 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 			border-top: none;
 		}
 							
-
-	/* Buttons */
-		
-	.button
-	{
-		position: relative;
-		display: inline-block;
-		background: #80BA8E;
-		padding: 0.8em 2em;
-		text-decoration: none !important;
-		font-size: 1.2em;
-		font-weight: 300;
-		color: #FFF !important;
-		-moz-transition: color 0.35s ease-in-out, background-color 0.35s ease-in-out;
-		-webkit-transition: color 0.35s ease-in-out, background-color 0.35s ease-in-out;
-		-o-transition: color 0.35s ease-in-out, background-color 0.35s ease-in-out;
-		-ms-transition: color 0.35s ease-in-out, background-color 0.35s ease-in-out;
-		transition: color 0.35s ease-in-out, background-color 0.35s ease-in-out;
-		text-align: center;
-		border-radius: 0.25em;
-	}
-
-	.button:hover
-	{
-		background: #70AA7E;
-		color: #FFF !important;
-	}
-
 /*********************************************************************************/
 /* Social Icon Styles                                                            */
 /*********************************************************************************/

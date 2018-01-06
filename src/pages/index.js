@@ -12,7 +12,7 @@ class AboutPage extends React.Component {
           <Helmet title={siteTitle} />
           <p>The first time I saw code I was ten years old.  My friend’s brother was writing something in BASIC on a Macintosh.  That blue screen, line numbers, and cryptic code that I did not understand drew me in. My obsession with computers and software was born.</p>
           
-          <p>Now 15+ years into my career, cryptic code is exactly what you don't want. My screen is white  (I’m not a dark theme guy).  And yes, I do turn on line numbers</p>
+          <p>Now 15+ years into my career, cryptic code is exactly what you don't want. My screen is white  (I’m not a dark theme guy).  And yes, I do turn on line numbers.</p>
           
           <p>I have another passion; I am a maker.  I love building gadgets, brewing beer, cooking food and I frequently mix all of these with writing code.  It’s amazing how far we’ve come where you can buy cheap devices you can program to help you do all of these things.</p>
           

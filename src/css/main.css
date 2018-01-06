@@ -1,0 +1,8 @@
+.my-image {
+    background-image: url(./images/Adam_Pritzl.png);
+    width: 200px;
+    height: 200px;
+    box-shadow: 0 0 8px 8px white inset;
+    margin: 0 auto 1em auto;
+    border-radius: 30px;
+}

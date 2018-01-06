@@ -26,7 +26,7 @@ class BlogPage extends React.Component {
         title
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(filter:{frontmatter:{published:{eq:true}}}, sort: { fields: [frontmatter___date], order: DESC }) {
 		edges {
 			node {
 			excerpt

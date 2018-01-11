@@ -1,0 +1,21 @@
+.blog-page h1 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.blog-page h2 {
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-decoration: underline;
+    margin-bottom: .3em;
+}
+
+.language-html {
+    border: black dashed solid;
+    padding: 8px;
+}
+
+.blog-date {
+    font-weight: 200;
+    font-style: italic;
+}

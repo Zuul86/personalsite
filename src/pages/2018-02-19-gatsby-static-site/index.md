@@ -5,8 +5,6 @@ path: "/gatsby-static-sites"
 published: false
 ---
 
-# Building Static Sites with Gatsby
-
 ## What is Gatsby?
 So I've purchased adampritzl.com and desided to create a website for my self to share what I learn with you.  I've heard static sites are the way to go so I did some searching and found [Gatsby](https://www.gatsbyjs.com).
 
@@ -29,7 +27,15 @@ In most cases you will not need to do any webpack configuration.  There are many
 
 ## What are plugins?
 
+Plugins are npm packages you can pull in to your gatsby project to solve website build tasks.  Plugins are load and configured by your gatsby-config.js file.  The three major classes of plugins are source, transform, and build.  Source plugins allow you to pull data from differents sources like a CMS, markdown files, or some API.  Transform plugins allow you to take a format of data like markdown, or JSON, and turn it into html.  Build plugins help you do your webpack type tasks like compiling SASS files.
+
 ## What is GraphQL
+
+[GraphQL](http://graphql.org/) is a language for queriing APIs of various kinds. In the context of Gatsby, it creates an interface between your data sources and your static site.  For the purpose of building a blog I'm using it to query my markdown files and build my static blog pages.  Gatsby has a fantasic live IDE built in for creating queries.  It can be found as follows.
+
+```html
+http://localhost:8000/___graphql
+```
 
 ## Building a blog
 

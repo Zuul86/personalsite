@@ -4,6 +4,7 @@ import Link from 'gatsby-link';
 import get from 'lodash/get';
 
 import '../css/blog.css';
+import 'prismjs/themes/prism-okaidia.css';
 
 class BlogPostTemplate extends React.Component {
   render() {

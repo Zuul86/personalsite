@@ -10,12 +10,12 @@
     margin-bottom: .3em;
 }
 
-.language-html {
-    border: black dashed solid;
-    padding: 8px;
-}
-
 .blog-date {
     font-weight: 200;
     font-style: italic;
+}
+
+code {
+    font-family: consolas;
+    font-weight: 300
 }

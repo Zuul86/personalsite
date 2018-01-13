@@ -9,7 +9,7 @@ import QuoteSection from '../components/quoteSection';
 import SiteFooter from '../components/siteFooter';
 import Copyright from '../components/copyright';
 
-import 'bootstrap/dist/css/bootstrap.css';
+import '../css/bootstrap.css';
 import '../css/style.css';
 import '../css/main.css';
 

@@ -31,7 +31,7 @@ Plugins are npm packages you can pull in to your gatsby project to solve website
 
 ## What is GraphQL
 
-[GraphQL](http://graphql.org/) is a language for queriing APIs of various kinds. In the context of Gatsby, it creates an interface between your data sources and your static site.  For the purpose of building a blog I'm using it to query my markdown files and build my static blog pages.  Gatsby has a fantasic live IDE built in for creating queries.  It can be found as follows.
+[GraphQL](http://graphql.org/) is a language for describing APIs of various kinds. In the context of Gatsby, it creates an interface between your data sources and your static site.  For the purpose of building a blog I'm using it to query my markdown files and build my static blog pages.  Gatsby has a fantasic live IDE built in for creating queries.  It can be found as follows.
 
 ```html
 http://localhost:8000/___graphql
@@ -39,3 +39,18 @@ http://localhost:8000/___graphql
 
 ## Building a blog
 
+Gatsby has a bunch of great starter projects from both Gatsby and the community.  Today we will take a look at the offical starter, [gatsby-starter-blog](https://github.com/gatsbyjs/gatsby-starter-blog).  To get started just type the following.
+
+```powershell
+gatsby new blog https://github.com/gatsbyjs/gatsby-starter-blog
+```
+
+This will create a directory called blog, clone the github repo and run npm install.  To start up the development server just type `gatsby dev`.
+
+## Deployment & Hosting
+
+There are a bunch of services you can host on such as Amazon S3, Netlify, GitHub Pages, Surge.sh.  I chose [Netlify](https://www.netlify.com/).  It's screaming fast, has built in continuous delivery, and free SSL using Let's Encrypt.
+
+## Conclusion
+
+Other use cases, react, fast

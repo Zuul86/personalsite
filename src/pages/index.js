@@ -23,7 +23,7 @@ class AboutPage extends React.Component {
         </div>
 
         <div>
-          <h2 style={{fontSize: '1.5em', fontWeight: '400'}}>Bio</h2>
+          <h2>Bio</h2>
           <p>
             Adam is a software developer/consultant of 15+ years at <a href="https://www.centare.com/" target="_blank">Centare</a> in Brookfield, WI.
             He started developing software using Classic ASP, VB6, and SQL Server.  He made the switch to .NET/C# and has been developing in it since.  In the last five years he has also picked up Javascript using

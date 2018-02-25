@@ -1,0 +1,12 @@
+.contactRow {
+    display: flex;
+}
+
+.contactInfo{
+    margin-top: 20px;
+    font-size: 1.5em;
+}
+
+.contactIcon{
+    width: 80px;
+}

@@ -2,12 +2,12 @@ import React from 'react';
 import Link from 'gatsby-link';
 import Helmet from 'react-helmet';
 import get from 'lodash/get';
-import RecentPosts from '../components/recentPosts';
-import SiteHeader from '../components/siteHeader';
-import SiteMain from '../components/siteMain';
-import QuoteSection from '../components/quoteSection';
-import SiteFooter from '../components/siteFooter';
-import Copyright from '../components/copyright';
+import RecentPosts from '../components/recentPosts.jsx';
+import SiteHeader from '../components/siteHeader.jsx';
+import SiteMain from '../components/siteMain.jsx';
+import QuoteSection from '../components/quoteSection.jsx';
+import SiteFooter from '../components/siteFooter.jsx';
+import Copyright from '../components/copyright.jsx';
 
 import '../css/bootstrap.css';
 import '../css/style.css';
@@ -17,30 +17,25 @@ class Template extends React.Component {
 	render() {
 
 		return (
-		<div>
-			<Helmet>
-				<link href='//fonts.googleapis.com/css?family=Roboto:400,100,300,700,500,900' rel='stylesheet' type='text/css' />
-			</Helmet>
-			
-			<SiteHeader />
+            <div>
+                <Helmet>
+                    <link href="//fonts.googleapis.com/css?family=Roboto:400,100,300,700,500,900" rel="stylesheet" type="text/css" />
+                </Helmet>
+                
+                <SiteHeader />
 
-			<SiteMain {...this.props} />
+                <SiteMain {...this.props} />
 
-			<QuoteSection />
+                <QuoteSection />
 
-			<SiteFooter />
+                <SiteFooter />
 
-			<Copyright />
+                <Copyright />
 
-		</div>
+            </div>
 		);
 	}
 }
-
-Template.propTypes = {
-  children: React.PropTypes.function,
-  location: React.PropTypes.object
-};
 
 export default Template;
 

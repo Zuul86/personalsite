@@ -1,5 +1,8 @@
 import React from 'react';
 import Link from 'gatsby-link';
+import fontawesome from '@fortawesome/fontawesome';
+import FontAwesomeIcon from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/fontawesome-free-solid';
 
 class SiteHeader extends React.Component {
     constructor(props){
@@ -12,7 +15,7 @@ class SiteHeader extends React.Component {
 	handleClick(){
 		this.setState(prevState => ({
 			isToggleOn: !prevState.isToggleOn
-		  }));
+        }));
 	}
     
     render(){
@@ -29,7 +32,7 @@ class SiteHeader extends React.Component {
                     <Link className="link" to="/">About</Link>
                     <Link className="link" to="/contact/">Contact</Link>
                     <Link className="link" to="/blog-posts/">Blog</Link>
-                    <a className="icon" href="javascript:void(0);" onClick={this.handleClick}><i className="fa fa-bars"></i></a>
+                    <a className="icon" href="javascript:void(0);" onClick={this.handleClick}><FontAwesomeIcon icon={faBars} /></a>
                 </nav>
             </div>
             <div className="container"> 

@@ -6,9 +6,6 @@
 
 @charset 'UTF-8';
 
-@font-face{font-family:'FontAwesome';src:url('font/fontawesome-webfont.eot?v=4.0.1');src:url('font/fontawesome-webfont.eot?#iefix&v=4.0.1') format('embedded-opentype'),url('font/fontawesome-webfont.woff?v=4.0.1') format('woff'),url('font/fontawesome-webfont.ttf?v=4.0.1') format('truetype'),url('font/fontawesome-webfont.svg?v=4.0.1#fontawesomeregular') format('svg');font-weight:normal;font-style:normal}
-
-
 /*********************************************************************************/
 /* Basic                                                                         */
 /*********************************************************************************/
@@ -40,7 +37,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 	h1,h2,h3,h4,h5,h6
 	{
-		font-weight: 300;
+		font-weight: 600;
 		color: #777;
 	}
 	
@@ -74,7 +71,8 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	a
 	{
 		text-decoration: none;
-		color: #80BA8E;
+		color: rgb(63, 90, 69);
+		font-weight: 400;
 	}
 	
 	a:hover
@@ -107,15 +105,8 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 		margin-bottom: 1.6em;
 	}
 
-		header .byline
-		{
-			display: block;
-			margin: 1.5em 0 0 0;
-			padding: 0 0 0.5em 0;
-		}
-
 		header h2 a{
-			font-size: 3.4em;
+			font-size: 3em;
 		}
 		
 		@media (max-width: 600px){
@@ -514,26 +505,3 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	{
 		font-size: 2.4em;
 	}
-
-	.fa
-	{
-		text-decoration: none;
-	}
-
-	.fa:before
-		{
-			display:inline-block;
-			font-family: FontAwesome;
-			font-size: 1.25em;
-			text-decoration: none;
-			font-style: normal;
-			font-weight: normal;
-			line-height: 1;
-			-webkit-font-smoothing:antialiased;
-			-moz-osx-font-smoothing:grayscale;
-		}
-
-	.fa-bars:before{content:"\f0c9"}
-	.fa-twitter:before{content:"\f099"}
-	.fa-github:before{content:"\f092"}
-	.fa-linkedin:before{content:"\f0e1"}

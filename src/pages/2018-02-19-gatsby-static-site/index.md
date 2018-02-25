@@ -77,3 +77,6 @@ Gatsby is a really rich extendable static site generator.  It's not only good fo
 * CSV files that you need to tranform into something useful? [gatsby-transformer-csv](https://www.gatsbyjs.org/packages/gatsby-transformer-csv/)
 
 ## Resources
+
+* [GatsbyJs](https://www.gatsbyjs.org/)
+* [Syntax FM](https://syntax.fm/)

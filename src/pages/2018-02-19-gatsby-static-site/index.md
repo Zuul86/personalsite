@@ -6,7 +6,7 @@ published: false
 ---
 
 ## What is Gatsby?
-So I've purchased adampritzl.com and decided to create a website for myself to share what I learn with you.  I've heard static sites are the way to go so I did some searching and found [Gatsby](https://www.gatsbyjs.com).
+So I've purchased adampritzl.com and decided to create a website for myself to share what I learn with you.  I've heard static sites are the way to go and I heard Wes and Scott talking about [Gatsby](https://www.gatsbyjs.com) on the [Syntax FM Podcast](https://syntax.fm/).
 
 Gatsby is a static site generator built on top of React.  You can bring your own data from various CMSs, markdown, and there is a big list of others.  The data is pulled in using prebuilt [plugins](https://www.gatsbyjs.org/docs/plugins/) and queried using GraphQL.
 
@@ -71,9 +71,4 @@ As you can see Gatsby + Netlify is a terrific way to get you blog up and running
 
 Gatsby is a rich extendable static site generator.  It's not only good for creating blogs but for creating any site rich with content.
 
-If your users aren't comfortable creating their content with markdown, they can continue to use the tools they are familiar with.  Just just the source and transform plugins that fit, or develop one yourself.
-
-## Resources
-
-* [GatsbyJs](https://www.gatsbyjs.org/)
-* [Syntax FM](https://syntax.fm/)
+If your users aren't comfortable creating their content with markdown, they can continue to use the tools they are familiar with.  Just choose the source and transform plugins that fit, or develop one yourself.

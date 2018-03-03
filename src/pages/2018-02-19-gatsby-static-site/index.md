@@ -6,7 +6,7 @@ published: false
 ---
 
 ## What is Gatsby?
-So I've purchased adampritzl.com and decided to create a website for myself to share what I learn with you.  I've heard static sites are the way to go and I heard Wes and Scott talking about [Gatsby](https://www.gatsbyjs.com) on the [Syntax FM Podcast](https://syntax.fm/).
+So I've purchased adampritzl.com and decided to create a website for myself to share what I learn with you.  Static sites are the direction I want to go and I heard Wes and Scott talking about [Gatsby](https://www.gatsbyjs.com) on the [Syntax FM Podcast](https://syntax.fm/).
 
 Gatsby is a static site generator built on top of React.  You can bring your own data from various CMSs, markdown, and there is a big list of others.  The data is pulled in using prebuilt [plugins](https://www.gatsbyjs.org/docs/plugins/) and queried using GraphQL.
 
@@ -16,22 +16,22 @@ Since React is my front-end framework of choice these days, it was the perfect f
 
 Since Gatsby is based on React, it uses components to create the website.  There are four major [components](https://www.gatsbyjs.org/docs/building-with-components/) that are used to build a Gatsby site.
 
-* **Html** - This includes the html, head, and body tags
-* **Layout** - This is an optional component that wraps page components.  It is used for things like headers, footers, and navigation
+* **Html** - This includes the html, head, and body tags.
+* **Layout** - This is an optional component that wraps page components.  It is used for things like headers, footers, and navigation.
 * **Page template** - This component is used for programmatically building pages.  For example, turning markdown into html pages.
-* **Page** - Components build with these become pages on your site.
+* **Page** - Components build with this become pages on your site.
 
 ## Do I need to know Webpack?
 
-In most cases you will not need to do any webpack configuration.  There are many prebuilt [plugins](https://www.gatsbyjs.org/docs/plugins/) that will do things like SASS processing, or adding TypeScript support.  If you find there is not a pluggin that solves your problem and it is a general one, why not contribute back to the open source community and create a plugin.
+In most cases you will not need to do any webpack configuration.  There are many prebuilt [plugins](https://www.gatsbyjs.org/docs/plugins/) that will do things like SASS processing, or add TypeScript support.  If you find there is not a plugin that solves your problem and it is a general one, why not contribute back to the open source community and create a plugin?
 
 ## What are plugins?
 
-Plugins are npm packages you can pull in to your gatsby project to solve website build tasks.  Plugins are loaded and configured by your gatsby-config.js file.  The three major classes of plugins are source, transform, and build.  Source plugins allow you to pull data from different sources like a CMS, markdown files, or some API.  Transform plugins allow you to take a format of data like markdown, or JSON, and turn it into html.  Build plugins help you do your webpack type tasks like compiling SASS files.
+Plugins are NPM packages you can pull in to your Gatsby project to solve website build tasks.  Plugins are loaded and configured by your gatsby-config.js file.  The three major classes of plugins are source, transform, and build.  Source plugins allow you to pull data from different sources like a CMS, markdown files, or some API.  Transform plugins allow you to take a format of data like markdown, or JSON, and turn it into html.  Build plugins help you do your webpack type tasks like compiling SASS files.
 
 ## What is GraphQL
 
-[GraphQL](http://graphql.org/) is a language for describing APIs of various kinds. In the context of Gatsby, it creates an interface between your data sources and your static site.  For the purpose of building a blog I'm using it to query my markdown files and build my static blog pages.  Gatsby has a fantastic live IDE built in for creating queries.  It can be found as follows.
+[GraphQL](http://graphql.org/) is a language for describing APIs of various kinds. In the context of Gatsby, it creates an interface between your data sources and your static site.  For the purpose of building a blog, I'm using it to query my markdown files and build my static blog pages.  Gatsby has a fantastic live IDE built in for creating queries.  It can be found as follows.
 
 ```html
 http://localhost:8000/___graphql
@@ -47,7 +47,7 @@ gatsby new blog https://github.com/gatsbyjs/gatsby-starter-blog
 
 This will create a directory called blog, clone the github repo and run npm install.  To start up the development server just type `gatsby dev`.
 
-Ok now we are ready to start building our site for the blog.  We will need to use some of the plugins I mentioned before.  
+Ok, now we are ready to start building our site for the blog.  We will need to use some of the plugins I mentioned before.  
 
 We need to get our blog data from somewhere.  A popular method for publishing blog posts is to create them in markdown.  First, we need to get the .md file from disk.  We'll use the source plugin, [gatsby-source-filesystem](https://www.gatsbyjs.org/packages/gatsby-source-filesystem/), to do this.  This plugin will create a set of File nodes from the directory specified in the config.  You can query these nodes from GraphQL, or use a transformer plugin to convert the file data into another form.
 
@@ -67,8 +67,6 @@ There are a bunch of services you can host on such as Amazon S3, Netlify, GitHub
 
 ## Conclusion
 
-As you can see Gatsby + Netlify is a terrific way to get you blog up and running.  Next I'd like to implement a tagging system for organization.  GraphQL will be a great way for me to create a tag component.  I'll do that once I get a couple posts under my belt.
+As you can see Gatsby + Netlify is a terrific way to get your blog up and running. Gatsby is a rich extendable static site generator.  It's not only good for creating blogs but for creating any site rich with content.  Users can continue creating content with familiar tools. Just choose the source and transform plugins that fit, or develop one yourself.
 
-Gatsby is a rich extendable static site generator.  It's not only good for creating blogs but for creating any site rich with content.
-
-If your users aren't comfortable creating their content with markdown, they can continue to use the tools they are familiar with.  Just choose the source and transform plugins that fit, or develop one yourself.
+Next, I'd like to implement a tagging system for organization.  GraphQL will be a perfect fit to create a tag component.  I'll do that once I get a couple posts under my belt.  Now go build yourself a website!

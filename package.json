@@ -11,12 +11,10 @@
     "@fortawesome/fontawesome-free-brands": "5.0.6",
     "@fortawesome/fontawesome-free-solid": "5.0.6",
     "@fortawesome/react-fontawesome": "0.0.17",
-    "eslint": "^4.13.1",
-    "eslint-plugin-import": "^2.8.0",
-    "eslint-plugin-react": "^7.5.1",
     "gatsby": "^1.9.146",
     "gatsby-cli": "^1.1.28",
     "gatsby-link": "^1.6.32",
+    "gatsby-plugin-feed": "^1.3.19",
     "gatsby-plugin-google-analytics": "^1.0.14",
     "gatsby-plugin-manifest": "^1.0.12",
     "gatsby-plugin-offline": "^1.0.12",
@@ -49,12 +47,10 @@
   },
   "scripts": {
     "dev": "gatsby develop",
-    "lint": "./node_modules/.bin/eslint --ext .js,.jsx --ignore-pattern public .",
     "test": "echo \"Error: no test specified\" && exit 1",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js'",
     "develop": "gatsby develop",
     "build": "gatsby build",
-    "fix-semi": "eslint --quiet --ignore-pattern node_modules --ignore-pattern public --parser babel-eslint --no-eslintrc --rule '{\"semi\": [2, \"never\"], \"no-extra-semi\": [2]}' --fix gatsby-node.js",
     "serve": "gatsby serve"
   }
 }

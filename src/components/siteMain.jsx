@@ -21,7 +21,7 @@ class SiteMain extends React.Component {
 						{isBlogPage ? null :
 						<div id="sidebar" className="col-md-4">
 							<div className="my-image" />
-							<RecentPosts posts={posts}/>
+							<RecentPosts posts={posts} />
 						</div>}
 						
 					</div>

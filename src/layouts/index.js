@@ -1,7 +1,5 @@
 import React from 'react';
-import Link from 'gatsby-link';
 import Helmet from 'react-helmet';
-import get from 'lodash/get';
 import RecentPosts from '../components/recentPosts.jsx';
 import SiteHeader from '../components/siteHeader.jsx';
 import SiteMain from '../components/siteMain.jsx';
@@ -44,21 +42,22 @@ query BlogQuery {
     site {
           siteMetadata {
               title
+              siteUrl
           }
     }
     allMarkdownRemark(filter:{frontmatter:{published:{eq:true}}}, sort: { fields: [frontmatter___date], order: DESC }) {
-          edges {
-              node {
-              excerpt
-              frontmatter {
-                  path
-                  date(formatString: "DD MMMM, YYYY")
-              }
-              frontmatter {
-                  title
-              }
-              }
-          }
+        edges {
+            node {
+            excerpt
+            frontmatter {
+                path
+                date(formatString: "DD MMMM, YYYY")
+            }
+            frontmatter {
+                title
+            }
+            }
+        }
     }
   }
 `;

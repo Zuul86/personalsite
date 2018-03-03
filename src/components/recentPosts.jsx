@@ -2,6 +2,9 @@ import React from "react";
 import Link from "gatsby-link";
 import get from "lodash/get";
 import Helmet from "react-helmet";
+import fontawesome from '@fortawesome/fontawesome';
+import FontAwesomeIcon from '@fortawesome/react-fontawesome';
+import { faRssSquare } from '@fortawesome/fontawesome-free-solid';
 
 class RecentPosts extends React.Component {
   render() {
@@ -33,6 +36,7 @@ class RecentPosts extends React.Component {
         })}
         </ul>
         </section>
+        <a href="rss.xml"><FontAwesomeIcon icon={faRssSquare} size="2x" /></a>
       </section>
     );
   }

@@ -2,7 +2,7 @@
 title: Building Static Sites with Gatsby
 date: "2018-03-05"
 path: "/gatsby-static-sites"
-published: false
+published: true
 ---
 
 ## What is Gatsby?

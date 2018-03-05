@@ -18,7 +18,7 @@ class AboutPage extends React.Component {
           
           <p>One of my hobbies is brewing beer.  So of course I have to make gadgets to help me out with this.  I made a stir plate for making yeast starters,  and i also have had a work in progress automated brewing system going on for years now.  Yeah it’s one of those projects as you might see from my GitHub account.</p>
           
-          <p>I don’t plan to stop making, building, and creating anytime soon.  I have a hunger for continuous learning and exploring new things though technology.  I’ve picked the the perfect career.  I can use my skills for both my profession and hobby.  Happy Making!</p>
+          <p>I don’t plan to stop making, building, and creating anytime soon.  I have a hunger for continuous learning and exploring new things through technology.  I’ve picked the the perfect career.  I can use my skills for both my profession and hobby.  Happy Making!</p>
           
         </div>
 

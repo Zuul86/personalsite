@@ -1,7 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: "Adam Pritzl - Software Developer/Consultant",
-    description: "Adam Pritzl's website and blog about software development and consulting",
+    description:
+      "Adam Pritzl's website and blog about software development and consulting",
     author: "Adam Pritzl",
     email: "zuul86@gmail.com",
     siteUrl: "https://www.adampritzl.com"
@@ -11,8 +12,8 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/src/pages`,
-        name: "pages",
-      },
+        name: "pages"
+      }
     },
     {
       resolve: `gatsby-transformer-remark`,
@@ -21,25 +22,25 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 590,
-            },
+              maxWidth: 590
+            }
           },
           {
             resolve: `gatsby-remark-responsive-iframe`,
             options: {
-              wrapperStyle: `margin-bottom: 1.0725rem`,
-            },
+              wrapperStyle: `margin-bottom: 1.0725rem`
+            }
           },
           "gatsby-remark-prismjs",
           "gatsby-remark-copy-linked-files"
-        ],
-      },
+        ]
+      }
     },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: `UA-108122421-1`,
-      },
+        trackingId: `UA-108122421-1`
+      }
     },
     {
       resolve: `gatsby-plugin-feed`,
@@ -64,7 +65,7 @@ module.exports = {
                   description: edge.node.excerpt,
                   url: site.siteMetadata.siteUrl + edge.node.frontmatter.path,
                   guid: site.siteMetadata.siteUrl + edge.node.frontmatter.path,
-                  custom_elements: [{ "content:encoded": edge.node.html }],
+                  custom_elements: [{ "content:encoded": edge.node.html }]
                 });
               });
             },
@@ -89,12 +90,14 @@ module.exports = {
                 }
               }
             `,
-            output: "/rss.xml",
-          },
-        ],
-      },
+            output: "/rss.xml"
+          }
+        ]
+      }
     },
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
-  ],
+    'gatsby-plugin-typography',
+    'gatsby-plugin-glamor',
+  ]
 };

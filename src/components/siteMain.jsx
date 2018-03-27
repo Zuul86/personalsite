@@ -1,6 +1,9 @@
 import React from 'react';
 import get from 'lodash/get';
+import { rhythm, scale } from "../utils/typography";
 import RecentPosts from '../components/recentPosts';
+import media from '../utils/mediaQueries';
+import me from "./Adam_Pritzl.png";
 
 class SiteMain extends React.Component {
     render(){
@@ -9,22 +12,49 @@ class SiteMain extends React.Component {
 		const posts = get(this, "props.data.allMarkdownRemark.edges");
         const isBlogPage = location.pathname !== '/contact/' && location.pathname !== '/';
 
+		const containerStyle = {
+			display: 'flex',
+			flexDirection: 'row',
+			maxWidth: media.Medium,
+			marginRight: 'auto',
+			marginLeft: 'auto'
+		};
+
+		const columnPadding = {
+			paddingRight: '15px',
+			paddingLeft: '15px'
+		}
+
+		const columnOne = {
+			flex: 3
+		};
+
+		const columnTwo = {
+			flex: 1
+		};
+
+		const myImage = {
+			backgroundImage: `url(${me})`,
+			width: '200px',
+			height: '200px',
+			boxShadow: '0 0 8px 8px white inset',
+			margin: '0 auto 1em auto',
+			borderRadius: '30px'
+		};
+
         return(
-            <div id="main">
-				<div className="container">
-					<div>
-						<div id="content" className={isBlogPage ? "col-md-12" : "col-md-8"}>
-							<section>
-								{children()}
-							</section>
-						</div>
-						{isBlogPage ? null :
-						<div id="sidebar" className="col-md-4">
-							<div className="my-image" />
-							<RecentPosts posts={posts} />
-						</div>}
-						
+            <div css={{padding: `${rhythm(2)} 0`}}>
+				<div css={containerStyle}>
+					<div css={{...columnOne, ...columnPadding}}>
+						<section>
+							{children()}
+						</section>
 					</div>
+					{isBlogPage ? null :
+					<div css={{...columnTwo, ...columnPadding}}>
+						<div css={myImage} />
+						<RecentPosts posts={posts} />
+					</div>}
 				</div>
 			</div>
         );

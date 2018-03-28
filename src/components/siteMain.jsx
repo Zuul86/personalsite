@@ -44,9 +44,9 @@ class SiteMain extends React.Component {
 
         return(
             <div css={{padding: `${rhythm(2)} 0`}}>
-				<div css={containerStyle}>
+				<div css={{...containerStyle, ...columnPadding}}>
 					<div css={{...columnOne, ...columnPadding}}>
-						<section>
+						<section css={{color: '#777', fontWeight: 300}}>
 							{children()}
 						</section>
 					</div>

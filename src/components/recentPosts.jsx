@@ -5,26 +5,34 @@ import Helmet from "react-helmet";
 import fontawesome from '@fortawesome/fontawesome';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import { faRssSquare } from '@fortawesome/fontawesome-free-solid';
+import { rhythm, scale } from "../utils/typography";
 
 class RecentPosts extends React.Component {
   render() {
+    const postedDate = {
+      padding: `0 0 1em`,
+      letterSpacing: '1px',
+      textTransform: 'uppercase',
+      fontSize: '8pt',
+      color: '#a2a2a2'
+    };
 
     return (
       <section>
         <header>
-          <h2 style={{fontSize: '2.4em'}}>Recent Posts</h2>
+          <h2 css={{...scale(3/4), color: '#777'}}>Recent Posts</h2>
         </header>
-        <section>
-        <ul className="style">
+        <section css={{padding: 0}}>
+        <ul css={{listStyle: "none", marginLeft: 0}}>
         {this.props.posts.map(post => {
           if (post.node.path !== "/404/") {
             const title = get(post, "node.frontmatter.title") || post.node.path;
             return (
               <li key={post.node.frontmatter.path}>
-                <p className="posted">{post.node.frontmatter.date}</p>
+                <p css={postedDate}>{post.node.frontmatter.date}</p>
                 <p key={post.node.frontmatter.path}>
                   <Link
-                    style={{ boxShadow: "none" }}
+                    css={{ boxShadow: "none", color: '#434343', textDecoration: 'none' }}
                     to={post.node.frontmatter.path}
                   >
                     {post.node.frontmatter.title}

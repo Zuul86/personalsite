@@ -8,6 +8,12 @@ const typography = new Typography({
     "Roboto"
   ],
   bodyFontFamily: ["Roboto"],
+  overrideStyles: ({ adjustFontSizeTo, rhythm }, options, styles) => ({
+    'a' : {
+      color: 'inherit',
+      fontWeight: 500
+    }
+  })
 });
 
 // Hot reload typography in development.

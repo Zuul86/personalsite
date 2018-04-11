@@ -10,16 +10,43 @@ class SiteFooter extends React.Component {
             position: 'relative',
             textAlign: 'center',
             padding: '6em 0em',
-            marginTop: '1em'
+			backgroundColor: '#000',
+			' h2': {
+				fontWeight: 400
+			},
+			' ul': {
+				padding: '1.5em 0 0',
+				marginLeft: '0',
+				listStyle: 'none',
+				' li': {
+					display: 'inline-block',
+					margin: '0 1em',
+					' a':{
+						color: 'rgba(173,173,173)'
+					}
+				}
+			},
+			' a': {
+				textDecoration: 'none',
+				color: '#FFF',
+				fontSize: '1.75em',
+				' span': {
+					display: 'none'
+				},
+				' :hover': {
+					color: '#FFF',
+					transition: 'color .35s ease-in-out,background-color .35s ease-in-out',
+				}
+			}
         }
 
         return(
-            <footer style={footerStyle}>
+            <footer css={footerStyle}>
 				<div className="container">
 					<section>
 						<header>
-							<h2 style={{color: '#FFF'}}><Link to="/contact/">Get in touch</Link></h2>
-							<span style={{color: 'rgba(255,255,255,.2)'}}>Visit me on Twitter, Github, and LinkedIn</span>
+							<h2><Link to="/contact/">Get in touch</Link></h2>
+							<span style={{color: 'rgba(173,173,173)'}}>Visit me on Twitter, Github, and LinkedIn</span>
 						</header>
 						<ul className="contact">
 							<li><a href="https://twitter.com/zuul86" target="_blank"><FontAwesomeIcon icon={faTwitter} /><span>Twitter</span></a></li>

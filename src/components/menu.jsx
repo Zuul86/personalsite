@@ -1,6 +1,9 @@
 import React from 'react'
 import Link from "gatsby-link";
 import { rhythm, scale } from "../utils/typography";
+import fontawesome from "@fortawesome/fontawesome";
+import FontAwesomeIcon from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/fontawesome-free-solid";
 
 class Menu extends React.Component {
 

@@ -1,8 +1,5 @@
 import React from "react";
 import Link from "gatsby-link";
-import fontawesome from "@fortawesome/fontawesome";
-import FontAwesomeIcon from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/fontawesome-free-solid";
 import { rhythm, scale } from "../utils/typography";
 import headerImage from "./header.jpg";
 import media from "../utils/mediaQueries";
@@ -30,8 +27,21 @@ class SiteHeader extends React.Component {
       backgroundSize: `cover`,
       textAlign: `center`,
       padding: `${rhythm(6)} 0 ${rhythm(3)} 0`,
+      '&::before' : {
+        content: "''",
+        position: 'absolute',
+        left: 0,
+        top: 0,
+        width: '100%',
+        height: '100%',
+        background: 'rgba(64,64,64,.125)'
+      },
       [media.small]: {
         padding: `${rhythm(3)} 0 ${rhythm(1)} 0`,
+        backgroundPosition: '50%',
+        height: rhythm(6),
+        backgroundAttachment: 'scroll',
+        padding: 0
       }
     };
 
@@ -56,8 +66,7 @@ class SiteHeader extends React.Component {
       letterSpacing: `-${rhythm(1 / 8)}`,
       margin: `0 0 ${rhythm(0.5)} 0`,
       [media.small]: { 
-        ...scale(1),
-        letterSpacing: `normal`,
+        ...scale(1.75),
       }
     };
 
@@ -66,7 +75,7 @@ class SiteHeader extends React.Component {
       ...scale(0.5),
       fontWeight: 400,
       [media.small]: {
-        ...scale(0.2),
+        ...scale(1 / 64),
         fontWeight: 300,
       }
     };
@@ -76,7 +85,7 @@ class SiteHeader extends React.Component {
         <div css={navWrapper}>
           <Menu />
         </div>
-        <div css={{ position: "relative", zIndex: 1 }}>
+        <div css={{ position: "relative", zIndex: 1, paddingTop: rhythm(1.2)}}>
           <div className={this.state.isToggleOn ? "open" : ""}>
             <h1 css={{ marginBottom: 0 }}>
               <Link css={logoStyle} to="/">

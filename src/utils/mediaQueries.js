@@ -7,4 +7,4 @@ const media = {
     Large: '1200px'
 };
 
-module.exports = media;
+export default media;

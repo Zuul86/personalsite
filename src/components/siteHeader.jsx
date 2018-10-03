@@ -6,19 +6,6 @@ import media from "../utils/mediaQueries";
 import Menu from "../components/menu";
 
 class SiteHeader extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { isToggleOn: false };
-
-    this.handleClick = this.handleClick.bind(this);
-  }
-
-  handleClick() {
-    this.setState(prevState => ({
-      isToggleOn: !prevState.isToggleOn
-    }));
-  }
-
   render() {
     const headerStyle = {
       position: `relative`,
@@ -46,14 +33,9 @@ class SiteHeader extends React.Component {
     };
 
     const navWrapper = {
-      background: "rgba(0,0,0,.1)",
       position: `absolute`,
       top: 0,
-      left: 0,
-      width: `100%`,
-      [media.small]: {
-        display: 'none'
-      }
+      width: `100%`
     };
 
     const logoStyle = {
@@ -85,15 +67,13 @@ class SiteHeader extends React.Component {
         <div css={navWrapper}>
           <Menu />
         </div>
-        <div css={{ position: "relative", zIndex: 1, paddingTop: rhythm(1.2)}}>
-          <div className={this.state.isToggleOn ? "open" : ""}>
-            <h1 css={{ marginBottom: 0 }}>
-              <Link css={logoStyle} to="/">
-                Adam Pritzl
-              </Link>
-            </h1>
-            <span css={subHeading}>software developer/consultant</span>
-          </div>
+        <div css={{ paddingTop: rhythm(1.2)}}>
+          <h1 css={{ marginBottom: 0 }}>
+            <Link css={logoStyle} to="/">
+              Adam Pritzl
+            </Link>
+          </h1>
+          <span css={subHeading}>software developer/consultant</span>
         </div>
       </div>
     );

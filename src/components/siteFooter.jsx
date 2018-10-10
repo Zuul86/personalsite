@@ -10,7 +10,7 @@ class SiteFooter extends React.Component {
         const footerStyle = {
             position: 'relative',
             textAlign: 'center',
-            padding: '6em 0em',
+            padding: '4em 0em',
 			backgroundColor: '#000',
 			[media.small]: {
 				padding: '2em 0em'

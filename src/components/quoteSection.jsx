@@ -11,9 +11,18 @@ class QuoteSection extends React.Component {
 			background: `url(${quoteBackground}) no-repeat center center`,
 			backgroundAttachment: 'fixed',
 			backgroundSize: 'cover',
-			padding: `${rhythm(4)} 0`,
+			padding: `${rhythm(6)} 0`,
 			...scale(.5),
-			color: 'hsla(0,0%,100%,.6)'
+			color: 'hsla(0,0%,100%,.6)',
+			'&::before' : {
+				content: "''",
+				position: 'absolute',
+				left: 0,
+				top: 0,
+				width: '100%',
+				height: '100%',
+				background: 'rgba(64,64,64,.125)'
+			  },
 		};
 
 		const containerStyle = {
@@ -28,7 +37,7 @@ class QuoteSection extends React.Component {
             <div css={quoteStyle}>
 				<div css={containerStyle}>
 					<section>
-						<blockquote css={{fontStyle: 'italic'}}>&ldquo;We live in a society exquisitely dependent on science and technology, in which hardly anyone knows anything about science and technology.&rdquo; Carl Sagan</blockquote>
+						<blockquote css={{fontStyle: 'italic', fontWeight: 300}}>&ldquo;We live in a society exquisitely dependent on science and technology, in which hardly anyone knows anything about science and technology.&rdquo; Carl Sagan</blockquote>
 					</section>
 				</div>
 			</div>

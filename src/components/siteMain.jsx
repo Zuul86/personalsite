@@ -17,7 +17,10 @@ class SiteMain extends React.Component {
 			flexDirection: 'row',
 			maxWidth: media.Medium,
 			marginRight: 'auto',
-			marginLeft: 'auto'
+			marginLeft: 'auto',
+			[media.small]: {
+				flexDirection: 'column'
+			}
 		};
 
 		const columnPadding = {

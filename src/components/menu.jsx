@@ -35,7 +35,7 @@ class Menu extends React.Component {
       [media.small]: {
         background: "rgba(0,0,0,.9)",
         position: 'absolute',
-        right: '0',
+        right: '1px',
         transition: 'width 0.5s ease 0s',
         width: this.state.isToggleOn
           ? '0'

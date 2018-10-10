@@ -3,6 +3,7 @@ import Link from 'gatsby-link';
 import fontawesome from '@fortawesome/fontawesome';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import brands, { faLinkedin, faTwitter, faGithub } from '@fortawesome/fontawesome-free-brands';
+import media from "../utils/mediaQueries";
 
 class SiteFooter extends React.Component {
     render(){
@@ -11,6 +12,9 @@ class SiteFooter extends React.Component {
             textAlign: 'center',
             padding: '6em 0em',
 			backgroundColor: '#000',
+			[media.small]: {
+				padding: '2em 0em'
+			},
 			' h2': {
 				fontWeight: 400
 			},
